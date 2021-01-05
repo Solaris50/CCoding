@@ -1,9 +1,7 @@
 #include <iostream>
 #include <cmath>
 
-#ifndef MARMOSET_TESTING
 int main();
-#endif
 
 char* encode(char *plaintext, unsigned long key);
 char* decode(char *ciphertext, unsigned long key);
@@ -167,7 +165,7 @@ char* decode(char *ciphertext, unsigned long key) {
 	return plaintext;
 }
 
-#ifndef MARMOSET_TESTING
+
 int main() {
 
 	char a[]{ "study" };
@@ -205,4 +203,4 @@ int main() {
 
 	return 0;
 }
-#endif
+
